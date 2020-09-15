@@ -1,6 +1,37 @@
 package org.launchcode.studio7;
 
-public class DVD {
+import java.util.HashMap;
+
+public class DVD extends BaseDisc implements OpticalDisc{
+
+    public DVD(String name, double capacity, String diskType, int year){
+        super(name, capacity, diskType, year);
+    }
+
+    @Override
+    public void storeData(String data) {
+
+    }
+
+    @Override
+    public String readData() {
+        return null;
+    }
+
+    @Override
+    public HashMap<String, String> getMetaData() {
+        return null;
+    }
+
+    @Override
+    public void storeData() {
+
+    }
+
+    @Override
+    public void spinDisc(boolean spin) {
+
+    }
 
     // TODO: Implement your custom interface.
 
